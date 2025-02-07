@@ -57,7 +57,6 @@
             this.space8.Name = "space8";
             this.space8.Size = new System.Drawing.Size(82, 82);
             this.space8.TabIndex = 43;
-            this.space8.Text = "X";
             this.space8.UseVisualStyleBackColor = true;
             // 
             // space7
@@ -68,7 +67,6 @@
             this.space7.Name = "space7";
             this.space7.Size = new System.Drawing.Size(82, 82);
             this.space7.TabIndex = 42;
-            this.space7.Text = "X";
             this.space7.UseVisualStyleBackColor = true;
             // 
             // space6
@@ -79,7 +77,6 @@
             this.space6.Name = "space6";
             this.space6.Size = new System.Drawing.Size(82, 82);
             this.space6.TabIndex = 41;
-            this.space6.Text = "X";
             this.space6.UseVisualStyleBackColor = true;
             // 
             // space1
@@ -90,7 +87,6 @@
             this.space1.Name = "space1";
             this.space1.Size = new System.Drawing.Size(82, 82);
             this.space1.TabIndex = 40;
-            this.space1.Text = "X";
             this.space1.UseVisualStyleBackColor = true;
             // 
             // space2
@@ -101,7 +97,6 @@
             this.space2.Name = "space2";
             this.space2.Size = new System.Drawing.Size(82, 82);
             this.space2.TabIndex = 39;
-            this.space2.Text = "X";
             this.space2.UseVisualStyleBackColor = true;
             // 
             // space5
@@ -112,7 +107,6 @@
             this.space5.Name = "space5";
             this.space5.Size = new System.Drawing.Size(82, 82);
             this.space5.TabIndex = 38;
-            this.space5.Text = "X";
             this.space5.UseVisualStyleBackColor = true;
             // 
             // space4
@@ -123,7 +117,6 @@
             this.space4.Name = "space4";
             this.space4.Size = new System.Drawing.Size(82, 82);
             this.space4.TabIndex = 37;
-            this.space4.Text = "X";
             this.space4.UseVisualStyleBackColor = true;
             // 
             // space3
@@ -134,7 +127,6 @@
             this.space3.Name = "space3";
             this.space3.Size = new System.Drawing.Size(82, 82);
             this.space3.TabIndex = 36;
-            this.space3.Text = "X";
             this.space3.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
@@ -186,7 +178,6 @@
             this.space0.Name = "space0";
             this.space0.Size = new System.Drawing.Size(82, 82);
             this.space0.TabIndex = 31;
-            this.space0.Text = "X";
             this.space0.UseVisualStyleBackColor = true;
             // 
             // resetButton
