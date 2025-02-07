@@ -15,6 +15,20 @@ namespace TicTacToeNet
         public Form1()
         {
             InitializeComponent();
+
         }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spaceClick(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+
+        }
+
+
     }
 }

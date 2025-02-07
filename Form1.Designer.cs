@@ -58,6 +58,7 @@
             this.space8.Size = new System.Drawing.Size(82, 82);
             this.space8.TabIndex = 43;
             this.space8.UseVisualStyleBackColor = true;
+            this.space8.Click += new System.EventHandler(this.spaceClick);
             // 
             // space7
             // 
@@ -68,6 +69,7 @@
             this.space7.Size = new System.Drawing.Size(82, 82);
             this.space7.TabIndex = 42;
             this.space7.UseVisualStyleBackColor = true;
+            this.space7.Click += new System.EventHandler(this.spaceClick);
             // 
             // space6
             // 
@@ -78,6 +80,7 @@
             this.space6.Size = new System.Drawing.Size(82, 82);
             this.space6.TabIndex = 41;
             this.space6.UseVisualStyleBackColor = true;
+            this.space6.Click += new System.EventHandler(this.spaceClick);
             // 
             // space1
             // 
@@ -88,6 +91,7 @@
             this.space1.Size = new System.Drawing.Size(82, 82);
             this.space1.TabIndex = 40;
             this.space1.UseVisualStyleBackColor = true;
+            this.space1.Click += new System.EventHandler(this.spaceClick);
             // 
             // space2
             // 
@@ -98,6 +102,7 @@
             this.space2.Size = new System.Drawing.Size(82, 82);
             this.space2.TabIndex = 39;
             this.space2.UseVisualStyleBackColor = true;
+            this.space2.Click += new System.EventHandler(this.spaceClick);
             // 
             // space5
             // 
@@ -108,6 +113,7 @@
             this.space5.Size = new System.Drawing.Size(82, 82);
             this.space5.TabIndex = 38;
             this.space5.UseVisualStyleBackColor = true;
+            this.space5.Click += new System.EventHandler(this.spaceClick);
             // 
             // space4
             // 
@@ -118,6 +124,7 @@
             this.space4.Size = new System.Drawing.Size(82, 82);
             this.space4.TabIndex = 37;
             this.space4.UseVisualStyleBackColor = true;
+            this.space4.Click += new System.EventHandler(this.spaceClick);
             // 
             // space3
             // 
@@ -128,6 +135,7 @@
             this.space3.Size = new System.Drawing.Size(82, 82);
             this.space3.TabIndex = 36;
             this.space3.UseVisualStyleBackColor = true;
+            this.space3.Click += new System.EventHandler(this.spaceClick);
             // 
             // pictureBox1
             // 
@@ -179,6 +187,7 @@
             this.space0.Size = new System.Drawing.Size(82, 82);
             this.space0.TabIndex = 31;
             this.space0.UseVisualStyleBackColor = true;
+            this.space0.Click += new System.EventHandler(this.spaceClick);
             // 
             // resetButton
             // 
@@ -190,6 +199,7 @@
             this.resetButton.TabIndex = 44;
             this.resetButton.Text = "Reset Game";
             this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // turnLabel
             // 
