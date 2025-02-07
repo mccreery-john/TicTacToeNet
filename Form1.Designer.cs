@@ -57,6 +57,7 @@
             this.space8.Name = "space8";
             this.space8.Size = new System.Drawing.Size(82, 82);
             this.space8.TabIndex = 43;
+            this.space8.Tag = "8";
             this.space8.UseVisualStyleBackColor = true;
             this.space8.Click += new System.EventHandler(this.spaceClick);
             // 
@@ -68,6 +69,7 @@
             this.space7.Name = "space7";
             this.space7.Size = new System.Drawing.Size(82, 82);
             this.space7.TabIndex = 42;
+            this.space7.Tag = "7";
             this.space7.UseVisualStyleBackColor = true;
             this.space7.Click += new System.EventHandler(this.spaceClick);
             // 
@@ -79,6 +81,7 @@
             this.space6.Name = "space6";
             this.space6.Size = new System.Drawing.Size(82, 82);
             this.space6.TabIndex = 41;
+            this.space6.Tag = "6";
             this.space6.UseVisualStyleBackColor = true;
             this.space6.Click += new System.EventHandler(this.spaceClick);
             // 
@@ -90,6 +93,7 @@
             this.space1.Name = "space1";
             this.space1.Size = new System.Drawing.Size(82, 82);
             this.space1.TabIndex = 40;
+            this.space1.Tag = "1";
             this.space1.UseVisualStyleBackColor = true;
             this.space1.Click += new System.EventHandler(this.spaceClick);
             // 
@@ -101,6 +105,7 @@
             this.space2.Name = "space2";
             this.space2.Size = new System.Drawing.Size(82, 82);
             this.space2.TabIndex = 39;
+            this.space2.Tag = "2";
             this.space2.UseVisualStyleBackColor = true;
             this.space2.Click += new System.EventHandler(this.spaceClick);
             // 
@@ -112,6 +117,7 @@
             this.space5.Name = "space5";
             this.space5.Size = new System.Drawing.Size(82, 82);
             this.space5.TabIndex = 38;
+            this.space5.Tag = "5";
             this.space5.UseVisualStyleBackColor = true;
             this.space5.Click += new System.EventHandler(this.spaceClick);
             // 
@@ -123,6 +129,7 @@
             this.space4.Name = "space4";
             this.space4.Size = new System.Drawing.Size(82, 82);
             this.space4.TabIndex = 37;
+            this.space4.Tag = "4";
             this.space4.UseVisualStyleBackColor = true;
             this.space4.Click += new System.EventHandler(this.spaceClick);
             // 
@@ -134,6 +141,7 @@
             this.space3.Name = "space3";
             this.space3.Size = new System.Drawing.Size(82, 82);
             this.space3.TabIndex = 36;
+            this.space3.Tag = "3";
             this.space3.UseVisualStyleBackColor = true;
             this.space3.Click += new System.EventHandler(this.spaceClick);
             // 
@@ -186,6 +194,7 @@
             this.space0.Name = "space0";
             this.space0.Size = new System.Drawing.Size(82, 82);
             this.space0.TabIndex = 31;
+            this.space0.Tag = "0";
             this.space0.UseVisualStyleBackColor = true;
             this.space0.Click += new System.EventHandler(this.spaceClick);
             // 
@@ -234,6 +243,7 @@
             this.Controls.Add(this.space0);
             this.MinimumSize = new System.Drawing.Size(369, 460);
             this.Name = "Form1";
+            this.Tag = "0";
             this.Text = "TicTacToe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
