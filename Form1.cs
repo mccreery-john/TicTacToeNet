@@ -14,7 +14,8 @@ namespace TicTacToeNet
     {
         string turn = "X";
         int turnCounter = 0;
-        //For board: O = 0 and X = 1, -1 = free space
+
+        //Board Values:     O = 0,     X = 1,    open = -1
         int[] board = {
             -1, -1, -1,
             -1, -1, -1,
@@ -52,20 +53,21 @@ namespace TicTacToeNet
             space8.Text = "";
 
             //Reset colors
-            space0.ForeColor = Color.Black;
-            space1.ForeColor = Color.Black;
-            space2.ForeColor = Color.Black;
-            space3.ForeColor = Color.Black;
-            space4.ForeColor = Color.Black;
-            space5.ForeColor = Color.Black;
-            space6.ForeColor = Color.Black;
-            space7.ForeColor = Color.Black;
-            space8.ForeColor = Color.Black;
+            space0.BackColor = SystemColors.ControlLight;
+            space1.BackColor = SystemColors.ControlLight;
+            space2.BackColor = SystemColors.ControlLight;
+            space3.BackColor = SystemColors.ControlLight;
+            space4.BackColor = SystemColors.ControlLight;
+            space5.BackColor = SystemColors.ControlLight;
+            space6.BackColor = SystemColors.ControlLight;
+            space7.BackColor = SystemColors.ControlLight;
+            space8.BackColor = SystemColors.ControlLight;
 
             //Reset turn values
             turn = "X";
             turnLabel.Text = "Turn: X";
             turnCounter = 0;
+            turnLabel.ForeColor = Color.Black;
 
             //Reset board array
             for (int i = 0; i < board.Length; i++)
@@ -81,21 +83,38 @@ namespace TicTacToeNet
             int buttonNumber = Convert.ToInt32((string)button.Tag);
             button.Enabled = false;
             button.Text = turn;
+            if (turn ==  "X")
+            {
+                board[buttonNumber] = 1;
+            } else if (turn == "O") 
+            {
+                board[buttonNumber] = 0;
+            }
 
             int win = winCheck(buttonNumber);
-            if (win != 0)                       //Win
+            if (win != 0)                           //Win
             {
                 disableSpaces();
                 winState(win, buttonNumber);
-            }else if (turnCounter == 8)                         //Draw
+            }else if (turnCounter == 8)             //Draw
             {
                 disableSpaces();
                 turnLabel.Text = "IT'S A DRAW!";
                 turnLabel.ForeColor = Color.Red;
             }
-            else
+            else                                    //Change turn
             {
-                //Change turn
+                if (turn == "X")
+                {
+                    turn = "O";
+                }else if (turn == "O") 
+                {
+                    turn = "X";
+                }
+
+                turnLabel.Text = "Turn: " + turn;
+                turnCounter++;
+                
             }
 
         }
@@ -133,19 +152,19 @@ namespace TicTacToeNet
         {
             switch (row) {
                 case 0:
-                    space0.ForeColor = Color.Red;
-                    space1.ForeColor = Color.Red;
-                    space2.ForeColor = Color.Red;
+                    space0.BackColor = Color.Red;
+                    space1.BackColor = Color.Red;
+                    space2.BackColor = Color.Red;
                     break;
                 case 1:
-                    space3.ForeColor = Color.Red;
-                    space4.ForeColor = Color.Red;
-                    space5.ForeColor = Color.Red;
+                    space3.BackColor = Color.Red;
+                    space4.BackColor = Color.Red;
+                    space5.BackColor = Color.Red;
                     break;
                 case 2:
-                    space6.ForeColor = Color.Red;
-                    space7.ForeColor = Color.Red;
-                    space8.ForeColor = Color.Red;
+                    space6.BackColor = Color.Red;
+                    space7.BackColor = Color.Red;
+                    space8.BackColor = Color.Red;
                     break;
             }
         }
@@ -155,19 +174,19 @@ namespace TicTacToeNet
             switch (col)
             {
                 case 0:
-                    space0.ForeColor = Color.Red;
-                    space3.ForeColor = Color.Red;
-                    space6.ForeColor = Color.Red;
+                    space0.BackColor = Color.Red;
+                    space3.BackColor = Color.Red;
+                    space6.BackColor = Color.Red;
                     break;
                 case 1:
-                    space1.ForeColor = Color.Red;
-                    space4.ForeColor = Color.Red;
-                    space7.ForeColor = Color.Red;
+                    space1.BackColor = Color.Red;
+                    space4.BackColor = Color.Red;
+                    space7.BackColor = Color.Red;
                     break;
                 case 2:
-                    space2.ForeColor = Color.Red;
-                    space5.ForeColor = Color.Red;
-                    space8.ForeColor = Color.Red;
+                    space2.BackColor = Color.Red;
+                    space5.BackColor = Color.Red;
+                    space8.BackColor = Color.Red;
                     break;
             }
         }
@@ -176,14 +195,14 @@ namespace TicTacToeNet
         {
             if (diag == 1)
             {
-                space0.ForeColor = Color.Red;
-                space4.ForeColor = Color.Red;
-                space8.ForeColor = Color.Red;
+                space0.BackColor = Color.Red;
+                space4.BackColor = Color.Red;
+                space8.BackColor = Color.Red;
             }else if (diag == 2)
             {
-                space2.ForeColor = Color.Red;
-                space4.ForeColor = Color.Red;
-                space6.ForeColor = Color.Red;
+                space2.BackColor = Color.Red;
+                space4.BackColor = Color.Red;
+                space6.BackColor = Color.Red;
             }
         }
 
