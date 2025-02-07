@@ -13,6 +13,7 @@ namespace TicTacToeNet
     public partial class Form1 : Form
     {
         string turn = "X";
+        int turnCounter = 0;
         //For board: O = 0 and X = 1, -1 = free space
         int[] board = {
             -1, -1, -1,
@@ -28,6 +29,49 @@ namespace TicTacToeNet
 
         private void resetButton_Click(object sender, EventArgs e)
         {
+            //Enable all spaces
+            space0.Enabled = true;
+            space1.Enabled = true;
+            space2.Enabled = true;
+            space3.Enabled = true;
+            space4.Enabled = true;
+            space5.Enabled = true;
+            space6.Enabled = true;
+            space7.Enabled = true;
+            space8.Enabled = true;
+
+            //Clear spaces
+            space0.Text = "";
+            space1.Text = "";
+            space2.Text = "";
+            space3.Text = "";
+            space4.Text = "";
+            space5.Text = "";
+            space6.Text = "";
+            space7.Text = "";
+            space8.Text = "";
+
+            //Reset colors
+            space0.ForeColor = Color.Black;
+            space1.ForeColor = Color.Black;
+            space2.ForeColor = Color.Black;
+            space3.ForeColor = Color.Black;
+            space4.ForeColor = Color.Black;
+            space5.ForeColor = Color.Black;
+            space6.ForeColor = Color.Black;
+            space7.ForeColor = Color.Black;
+            space8.ForeColor = Color.Black;
+
+            //Reset turn values
+            turn = "X";
+            turnLabel.Text = "Turn: X";
+            turnCounter = 0;
+
+            //Reset board array
+            for (int i = 0; i < board.Length; i++)
+            {
+                board[i] = -1;
+            }
 
         }
 
@@ -39,10 +83,13 @@ namespace TicTacToeNet
             button.Text = turn;
 
             int win = winCheck(buttonNumber);
-            if (win != 0)
+            if (win != 0)                       //Win
             {
                 winState(win, buttonNumber);
-            } else
+            }else if (turnCounter == 8)                         //Draw
+            {
+
+            }else
             {
                 //Change turn
             }
