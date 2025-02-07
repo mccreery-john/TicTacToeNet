@@ -85,18 +85,22 @@ namespace TicTacToeNet
             int win = winCheck(buttonNumber);
             if (win != 0)                       //Win
             {
+                disableSpaces();
                 winState(win, buttonNumber);
             }else if (turnCounter == 8)                         //Draw
             {
-
-            }else
+                disableSpaces();
+                turnLabel.Text = "IT'S A DRAW!";
+                turnLabel.ForeColor = Color.Red;
+            }
+            else
             {
                 //Change turn
             }
 
         }
 
-        void winState(int winType, int square)
+        private void disableSpaces()
         {
             //Disable all spaces
             space0.Enabled = false;
@@ -108,7 +112,11 @@ namespace TicTacToeNet
             space6.Enabled = false;
             space7.Enabled = false;
             space8.Enabled = false;
+            return;
+        }
 
+        void winState(int winType, int square)
+        {
             if (board[square] == 0)
             {
                 turnLabel.Text = "O HAS WON!";
